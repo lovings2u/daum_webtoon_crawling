@@ -1,0 +1,21 @@
+<table>
+  <thead>
+    <tr>
+      <th>이미지</th>
+      <th>제목</th>
+      <th>설명</th>
+      <th>평점</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @webtoons.each do |webtoon| %>
+    <tr>
+      <td><img src="<%= webtoon[:img_url] %>"></td>
+      <td><%= webtoon[:title] %></td>
+      <td><%= webtoon[:intro] %></td>
+      <td><%= webtoon[:score].round(1) %></td>
+      <td><a href="http://webtoon.daum.net/webtoon/view/<%= webtoon[:nick] %>">보러가기</a></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
