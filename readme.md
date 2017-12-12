@@ -56,3 +56,9 @@ url = "http://webtoon.daum.net/data/pc/webtoon/list_serialized/#{week_day}?timeS
 
 받아온 json 파일을 `#{timestamp}.json`파일에 저장하고 `timestamp`는 메소드의 리턴값으로 사용한다. 그리고 `/webtoon`에서 해당 리턴값을 받아 파일을 읽는데에 사용한다.
 
+
+
+#### Edit
+
+일반 이미지를 thumbnail를 바꿔놓음
+
