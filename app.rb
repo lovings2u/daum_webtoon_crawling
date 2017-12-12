@@ -17,7 +17,7 @@ get '/webtoon' do
       title: webtoon["title"],
       score: webtoon["averageScore"],
       intro: webtoon["introduction"],
-      img_url: webtoon["pcRecommendImage"]["url"],
+      img_url: webtoon["pcThumbnailImage"]["url"],
       nick: webtoon["nickname"]
     }
     @webtoons << toon
